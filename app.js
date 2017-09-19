@@ -3,6 +3,7 @@
 var score = 0;
 var a1, a2, a3, a4, a5;
 var q1, q2, q3, q4, q5;
+
 var userName = prompt('Greetings! What is your name?');
 alert('Well hello there ' + userName + '! Pleasure to meet you! See if you can get these couple answers right about me.');
 

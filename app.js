@@ -12,7 +12,7 @@ var answer1 = prompt((q1 = 'Do I ride a motorcycle?')).toLowerCase();
 
 if (answer1 === 'y' || answer1 === 'yes') {
   alert('You are Correct!');
-  score = score +1;
+  score = score + 1;
   a1 = 'Correct';
 } else {
   alert('You are Incorrect.');
@@ -24,7 +24,7 @@ var answer2 = prompt((q2 = 'Have I swam with sharks before?')).toLowerCase();
 
 if (answer2 === 'n' || answer2 === 'no') {
   alert('Correctamundo!');
-  score = score +1;
+  score = score + 1;
   a2 = 'Correct';
 } else {
   alert('That is Incorrect.');
@@ -36,7 +36,7 @@ var answer3 = prompt((q3 = 'Have I been to Australia?')).toLowerCase();
 
 if (answer3 === 'n' || answer3 === 'no') {
   alert('Correct! I have not. But I always have wanted to go to Australia.');
-  score = score +1;
+  score = score + 1;
   a3 = 'Correct';
 } else {
   alert('Incorrect, I have never been to Australia.');
@@ -48,7 +48,7 @@ var answer4 = prompt((q4 = 'Can I do a handstand?')).toLowerCase();
 
 if (answer4 === 'y' || answer4 === 'yes') {
   alert('Correct! I can do a handstand quite well.');
-  score = score +1;
+  score = score + 1;
   a4 = 'Correct';
 } else {
   alert('That is Incorrect, I actually am capable of walking around on my hands.');
@@ -60,7 +60,7 @@ var answer5 = prompt((q5 = 'Are Mini Cooper\'s amazing?')).toLowerCase();
 
 if (answer5 === 'y' || answer5 === 'yes') {
   alert('Hell yes they are!');
-  score = score +1;
+  score = score + 1;
   a5 = 'Correct';
 } else {
   alert('You should probably re-think your interests, that is Incorrect.');

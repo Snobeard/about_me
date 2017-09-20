@@ -1,18 +1,42 @@
 * {
   color: purple;
+  border: red 1px solid;
+  margin: 0px;
+  padding: 0px;
+  background-color: #548bb2;
 }
 
+header {
+  background-image: url("the_verge.jpg");
+  background-size: 100% auto;
+  background-position: 100% 40%;
+  height: 100px;
+}
 h1 {
+  margin: 0 auto;
+  width: 10%;
+  min-width: 202px;
   font-weight: 550;
   font-size: 40px;
+  color: white;
+  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+  position: relative;
+  top: 25%;
+  background-color: transparent;
+}
+img {
+  margin: 10px;
+}
+#education {
+  display: inline-block;
+  margin: 20px;
+  width: 120px;
+  top: 50%;
 }
 p {
   font-weight: bold;
   font-size: 20px;
 }
 body {
-  background-color: lightblue;
-  text-align: center;
-  padding-left: 20px;
-  margin: auto;
+  background-color: : lightblue;
 }

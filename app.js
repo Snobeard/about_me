@@ -76,6 +76,7 @@ if (score > 3) {
   alert('You should get to know me better, unfortunately you only got ' + score + ' out of 5 correct answers.');
 }
 
+console.log('User Name: ' + userName);
 console.log('Question 1_' + q1 + ': ' + answer1 + ' was ' + a1);
 console.log('Question 2_' + q2 + ': ' + answer2 + ' was ' + a2);
 console.log('Question 3_' + q3 + ': ' + answer3 + ' was ' + a3);

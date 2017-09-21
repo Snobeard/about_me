@@ -80,11 +80,11 @@ do {
   } else if (answer6 === 7) {
     alert('Well Done! It takes 7 licks to get to the center of a tootsie pop!');
     score += 1;
-    a7 = 'correct';
+    a6 = 'Correct';
   } else if (answer6 < 7) {
-    alert(a7 = 'Too Low!');
+    alert(a6 = 'Too Low!');
   } else
-    alert(a7 = 'Too High!');
+    alert(a6 = 'Too High!');
 } while (answer6 !== 7 && guessFour > 0);
 
 // Question 7

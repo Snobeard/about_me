@@ -131,6 +131,7 @@ function getScore() {
   }
 }
 
+// call name / question / score functions
 askName();
 question1();
 question2();

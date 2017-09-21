@@ -1,6 +1,7 @@
 'use strict'; /* helps with declaration of variables and errors */
 
 var score = 0;
+var scorePossible = 0;
 var guessFour = 4;
 var guessSix = 6;
 var a1, a2, a3, a4, a5, a6, a7;
@@ -12,7 +13,7 @@ alert('Well hello there ' + userName + '! Pleasure to meet you! See if you can g
 
 // Question 1
 var answer1 = prompt(q1 = 'Do I ride a motorcycle?').toLowerCase();
-
+scorePossible += 1;
 if (answer1 === 'y' || answer1 === 'yes') {
   alert('You are Correct!');
   score += 1;
@@ -24,7 +25,7 @@ if (answer1 === 'y' || answer1 === 'yes') {
 
 // Question 2
 var answer2 = prompt(q2 = 'Have I swam with sharks before?').toLowerCase();
-
+scorePossible += 1;
 if (answer2 === 'n' || answer2 === 'no') {
   alert('Correctamundo!');
   score += 1;
@@ -36,7 +37,7 @@ if (answer2 === 'n' || answer2 === 'no') {
 
 // Question 3
 var answer3 = prompt(q3 = 'Have I been to Australia?').toLowerCase();
-
+scorePossible += 1;
 if (answer3 === 'n' || answer3 === 'no') {
   alert('Correct! I have not. But I always have wanted to go to Australia.');
   score += 1;
@@ -48,7 +49,7 @@ if (answer3 === 'n' || answer3 === 'no') {
 
 // Question 4
 var answer4 = prompt(q4 = 'Can I do a handstand?').toLowerCase();
-
+scorePossible += 1;
 if (answer4 === 'y' || answer4 === 'yes') {
   alert('Correct! I can do a handstand quite well.');
   score += 1;
@@ -60,7 +61,7 @@ if (answer4 === 'y' || answer4 === 'yes') {
 
 // Question 5
 var answer5 = prompt(q5 = 'Are Mini Cooper\'s amazing?').toLowerCase();
-
+scorePossible += 1;
 if (answer5 === 'y' || answer5 === 'yes') {
   alert('Hell yes they are!');
   score += 1;
@@ -71,6 +72,7 @@ if (answer5 === 'y' || answer5 === 'yes') {
 }
 
 // Question 6
+scorePossible += 1;
 do {
   var answer6 = prompt((q6 = 'How many licks does it take to get to the center of a tootsie pop?') + '\n(you have ' + guessFour + ' tries left)');
   answer6 = Number(answer6);
@@ -88,6 +90,7 @@ do {
 } while (answer6 !== 7 && guessFour > 0);
 
 // Question 7
+scorePossible += 1;
 do {
   var answer7 = prompt((q7 = 'Can you guess a state that I have lived in besides Washington?') + '\n(you have ' + guessSix + ' tries left)').toLowerCase();
   guessSix -= 1;
@@ -106,7 +109,7 @@ if (score > 5) {
 } else if (score > 2) {
   alert('Not bad, you got ' + score + ' out of 7 correct answers.');
 } else {
-  alert('You should get to know me better, unfortunately you only got ' + score + ' out of 7 correct answers.');
+  alert('You should get to know me better, unfortunately you only got ' + score + ' out of ' + scorePossible + ' correct answers.');
 }
 
 // console logs

@@ -6,16 +6,17 @@ var guessFour = 4;
 var guessSix = 6;
 var a1, a2, a3, a4, a5, a6, a7;
 var q1, q2, q3, q4, q5, q6, q7;
+var userName, answer1, answer2, answer3, answer4, answer5, answer6, answer7;
 var myStates = ['california', 'georgia', 'new york', 'iowa', 'texas', 'colorado', 'kentucky', 'new mexico', 'michigan'];
 
 function askName() {
-  var userName = prompt('Greetings! What is your name?');
+  userName = prompt('Greetings! What is your name?');
   alert('Well hello there ' + userName + '! Pleasure to meet you! See if you can get these couple answers right about me.');
 }
 
 // Question 1
 function question1() {
-  var answer1 = prompt(q1 = 'Do I ride a motorcycle?').toLowerCase();
+  answer1 = prompt(q1 = 'Do I ride a motorcycle?').toLowerCase();
   scorePossible += 1;
   if (answer1 === 'y' || answer1 === 'yes') {
     alert('You are Correct!');
@@ -29,7 +30,7 @@ function question1() {
 
 // Question 2
 function question2() {
-  var answer2 = prompt(q2 = 'Have I swam with sharks before?').toLowerCase();
+  answer2 = prompt(q2 = 'Have I swam with sharks before?').toLowerCase();
   scorePossible += 1;
   if (answer2 === 'n' || answer2 === 'no') {
     alert('Correctamundo!');
@@ -43,7 +44,7 @@ function question2() {
 
 // Question 3
 function question3() {
-  var answer3 = prompt(q3 = 'Have I been to Australia?').toLowerCase();
+  answer3 = prompt(q3 = 'Have I been to Australia?').toLowerCase();
   scorePossible += 1;
   if (answer3 === 'n' || answer3 === 'no') {
     alert('Correct! I have not. But I always have wanted to go to Australia.');
@@ -57,7 +58,7 @@ function question3() {
 
 // Question 4
 function question4() {
-  var answer4 = prompt(q4 = 'Can I do a handstand?').toLowerCase();
+  answer4 = prompt(q4 = 'Can I do a handstand?').toLowerCase();
   scorePossible += 1;
   if (answer4 === 'y' || answer4 === 'yes') {
     alert('Correct! I can do a handstand quite well.');
@@ -71,7 +72,7 @@ function question4() {
 
 // Question 5
 function question5() {
-  var answer5 = prompt(q5 = 'Are Mini Cooper\'s amazing?').toLowerCase();
+  answer5 = prompt(q5 = 'Are Mini Cooper\'s amazing?').toLowerCase();
   scorePossible += 1;
   if (answer5 === 'y' || answer5 === 'yes') {
     alert('Hell yes they are!');
@@ -87,7 +88,7 @@ function question5() {
 function question6() {
   scorePossible += 1;
   do {
-    var answer6 = prompt((q6 = 'How many licks does it take to get to the center of a tootsie pop?') + '\n(you have ' + guessFour + ' tries left)');
+    answer6 = prompt((q6 = 'How many licks does it take to get to the center of a tootsie pop?') + '\n(you have ' + guessFour + ' tries left)');
     answer6 = Number(answer6);
     guessFour -= 1;
     if (isNaN(answer6)) {
@@ -107,7 +108,7 @@ function question6() {
 function question7() {
   scorePossible += 1;
   do {
-    var answer7 = prompt((q7 = 'Can you guess a state that I have lived in besides Washington?') + '\n(you have ' + guessSix + ' tries left)').toLowerCase();
+    answer7 = prompt((q7 = 'Can you guess a state that I have lived in besides Washington?') + '\n(you have ' + guessSix + ' tries left)').toLowerCase();
     guessSix -= 1;
     if (myStates.indexOf(answer7) > -1) {
       alert('Yes! I have lived in ' + answer7 + ' before.\n\n The possible states could have been: | ' + (myStates.join(' | ')));

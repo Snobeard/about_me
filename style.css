@@ -9,7 +9,7 @@ article {
   /*border: 1px white solid;*/
 }
 header {
-  background-image: url("the_verge.jpg");
+  background-image: url("Images/the_verge.jpg");
   background-size: 100% auto;
   background-position: 100% 40%;
   height: 100px;
@@ -57,7 +57,7 @@ li, p {
   font-size: 20px;
 }
 body {
-  background-image: url("papyrus.jpg");
+  background-image: url("Images/papyrus.jpg");
   background-size: 100% auto;
   /*background-attachment: fixed;*/
   background-position: 100% 40%;

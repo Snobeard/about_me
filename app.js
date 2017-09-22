@@ -5,18 +5,19 @@ var scorePossible = 0;
 var guessFour = 4;
 var guessSix = 6;
 var a1, a2, a3, a4, a5, a6, a7;
-var q1, q2, q3, q4, q5, q6, q7;
+// var q1, q2, q3, q4, q5, q6, q7;
+var questionZ = ['Greetings! What is your name?', 'Do I ride a motorcycle?', 'Have I swam with sharks before?', 'Have I been to Australia?', 'Can I do a handstand?', 'Are Mini Cooper\'s amazing?', 'How many licks does it take to get to the center of a tootsie pop?', 'Can you guess a state that I have lived in besides Washington?'];
 var userName, answer1, answer2, answer3, answer4, answer5, answer6, answer7;
 var myStates = ['california', 'georgia', 'new york', 'iowa', 'texas', 'colorado', 'kentucky', 'new mexico', 'michigan'];
 
 function askName() {
-  userName = prompt('Greetings! What is your name?');
+  userName = prompt(questionZ[0]);
   alert('Well hello there ' + userName + '! Pleasure to meet you! See if you can get these couple answers right about me.');
 }
 
 // Question 1
 function question1() {
-  answer1 = prompt(q1 = 'Do I ride a motorcycle?').toLowerCase();
+  answer1 = prompt(questionZ[1]).toLowerCase();
   scorePossible += 1;
   if (answer1 === 'y' || answer1 === 'yes') {
     alert('You are Correct!');
@@ -30,7 +31,7 @@ function question1() {
 
 // Question 2
 function question2() {
-  answer2 = prompt(q2 = 'Have I swam with sharks before?').toLowerCase();
+  answer2 = prompt(questionZ[2]).toLowerCase();
   scorePossible += 1;
   if (answer2 === 'n' || answer2 === 'no') {
     alert('Correctamundo!');
@@ -44,7 +45,7 @@ function question2() {
 
 // Question 3
 function question3() {
-  answer3 = prompt(q3 = 'Have I been to Australia?').toLowerCase();
+  answer3 = prompt(questionZ[3]).toLowerCase();
   scorePossible += 1;
   if (answer3 === 'n' || answer3 === 'no') {
     alert('Correct! I have not. But I always have wanted to go to Australia.');
@@ -58,7 +59,7 @@ function question3() {
 
 // Question 4
 function question4() {
-  answer4 = prompt(q4 = 'Can I do a handstand?').toLowerCase();
+  answer4 = prompt(questionZ[4]).toLowerCase();
   scorePossible += 1;
   if (answer4 === 'y' || answer4 === 'yes') {
     alert('Correct! I can do a handstand quite well.');
@@ -72,7 +73,7 @@ function question4() {
 
 // Question 5
 function question5() {
-  answer5 = prompt(q5 = 'Are Mini Cooper\'s amazing?').toLowerCase();
+  answer5 = prompt(questionZ[5]).toLowerCase();
   scorePossible += 1;
   if (answer5 === 'y' || answer5 === 'yes') {
     alert('Hell yes they are!');
@@ -88,7 +89,7 @@ function question5() {
 function question6() {
   scorePossible += 1;
   do {
-    answer6 = prompt((q6 = 'How many licks does it take to get to the center of a tootsie pop?') + '\n(you have ' + guessFour + ' tries left)');
+    answer6 = prompt(questionZ[6] + '\n(you have ' + guessFour + ' tries left)');
     answer6 = Number(answer6);
     guessFour -= 1;
     if (isNaN(answer6)) {
@@ -108,7 +109,7 @@ function question6() {
 function question7() {
   scorePossible += 1;
   do {
-    answer7 = prompt((q7 = 'Can you guess a state that I have lived in besides Washington?') + '\n(you have ' + guessSix + ' tries left)').toLowerCase();
+    answer7 = prompt(questionZ[7] + '\n(you have ' + guessSix + ' tries left)').toLowerCase();
     guessSix -= 1;
     if (myStates.indexOf(answer7) > -1) {
       alert('Yes! I have lived in ' + answer7 + ' before.\n\n The possible states could have been: | ' + (myStates.join(' | ')));
@@ -117,7 +118,7 @@ function question7() {
     } else {
       a7 = 'not one of the choices.';
     }
-  } while (myStates.indexOf(answer7) === -1 && guessSix > 0);
+  } while (!myStates.includes(answer7) && guessSix > 0);
 }
 
 // alert with final score
@@ -143,11 +144,11 @@ question7();
 getScore();
 
 // console logs
-console.log('User Name: ' + userName);
-console.log('Question 1_' + q1 + ': ' + answer1 + ' was ' + a1);
-console.log('Question 2_' + q2 + ': ' + answer2 + ' was ' + a2);
-console.log('Question 3_' + q3 + ': ' + answer3 + ' was ' + a3);
-console.log('Question 4_' + q4 + ': ' + answer4 + ' was ' + a4);
-console.log('Question 5_' + q5 + ': ' + answer5 + ' was ' + a5);
-console.log('Question 6_' + q6 + ': ' + answer6 + ' was ' + a6);
-console.log('Question 7_' + q7 + ': ' + answer7 + ' was ' + a7);
+console.log('User Name: ' + questionZ[0]);
+console.log('Question 1_' + questionZ[1] + ': ' + answer1 + ' was ' + a1);
+console.log('Question 2_' + questionZ[2] + ': ' + answer2 + ' was ' + a2);
+console.log('Question 3_' + questionZ[3] + ': ' + answer3 + ' was ' + a3);
+console.log('Question 4_' + questionZ[4] + ': ' + answer4 + ' was ' + a4);
+console.log('Question 5_' + questionZ[5] + ': ' + answer5 + ' was ' + a5);
+console.log('Question 6_' + questionZ[6] + ': ' + answer6 + ' was ' + a6);
+console.log('Question 7_' + questionZ[7] + ': ' + answer7 + ' was ' + a7);

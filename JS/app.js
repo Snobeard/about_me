@@ -7,8 +7,32 @@ var guessSix = 6;
 var userName, answer1, answer2, answer3, answer4, answer5, answer6, answer7;
 var answerZ = [userName, answer1, answer2, answer3, answer4, answer5, answer6, answer7];
 var a1, a2, a3, a4, a5, a6, a7;
-var myStates = ['california', 'georgia', 'new york', 'iowa', 'texas', 'colorado', 'kentucky', 'new mexico', 'michigan'];
-var questionZ = ['Greetings! What is your name?', 'Do I ride a motorcycle?', 'Have I swam with sharks before?', 'Have I been to Australia?', 'Can I do a handstand?', 'Are Mini Cooper\'s amazing?', 'How many licks does it take to get to the center of a tootsie pop?', 'Can you guess a state that I have lived in besides Washington?'];
+var myStates = [
+  'california',
+  'georgia',
+  'new york',
+  'iowa',
+  'texas',
+  'colorado',
+  'kentucky',
+  'new mexico',
+  'michigan'
+];
+
+var questionZ = [
+  'Greetings! What is your name?',
+  'Do I ride a motorcycle?',
+  'Have I swam with sharks before?',
+  'Have I been to Australia?',
+  'Can I do a handstand?',
+  'Are Mini Cooper\'s amazing?',
+  'How many licks does it take to get to the center of a tootsie pop?',
+  'Can you guess a state that I have lived in besides Washington?'
+];
+
+var response = [
+  
+];
 
 var runQuestions = [
   // asks for users name

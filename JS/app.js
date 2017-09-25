@@ -30,10 +30,6 @@ var questionZ = [
   'Can you guess a state that I have lived in besides Washington?'
 ];
 
-var response = [
-  
-];
-
 var runQuestions = [
   // asks for users name
   function askName() {
